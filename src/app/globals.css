@@ -32,3 +32,8 @@ body {
     text-wrap: balance;
   }
 }
+
+/* required to adjust some annoying layout Tailwind adds that makes flex components not take up full width */
+*, ::before, ::after {
+  box-sizing: content-box;
+}
