@@ -1,6 +1,6 @@
 export default function WelcomeCard() {
   return (
-    <div className="bg-blue-200 bg-opacity-75 w-9/12 flex flex-col items-start rounded-md py-7 px-5 flex-1 grow md:-mr-8 md:-mt-8 z-10">
+    <div className="bg-blue-200 bg-opacity-75 w-9/12 flex flex-col items-start rounded-md py-7 px-5 flex-1 grow md:-mr-8 md:-mt-8 z-10 max-w-96 min-w-64">
       <h2 className="text-lg">
         You&apos;re Invited!
       </h2>
