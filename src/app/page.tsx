@@ -15,7 +15,7 @@ export default function Home() {
       <h1 className={`${ADLaM.className} text-4xl md:text-6xl font-bold text-center md:text-left md:mb-20 mb-5`}>
         juanita garden tour • spring &apos;25
       </h1>
-      <main className="w-full flex-1 flex md:flex-row-reverse flex-col md:gap-0 gap-6 items-center justify-center sm:items-start">
+      <main className="w-full flex-1 flex lg:flex-row-reverse flex-col lg:gap-0 lg:items-start gap-6 items-center justify-center">
         <Image
           className="rounded-md"
           src="/img/background-image.png"
