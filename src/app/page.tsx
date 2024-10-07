@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { ADLaM_Display } from 'next/font/google'
 
+import RegisterButton from '@/components/RegisterButton'
 import WelcomeCard from '@/components/WelcomCard'
 
 const ADLaM = ADLaM_Display({
@@ -12,6 +13,9 @@ const ADLaM = ADLaM_Display({
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center p-8 pb-20 sm:p-20">
+      <nav className="flex w-full">
+        <RegisterButton />
+      </nav>
       <h1 className={`${ADLaM.className} text-4xl md:text-6xl font-bold text-center md:text-left md:mb-20 mb-5`}>
         juanita garden tour • spring &apos;25
       </h1>

@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
@@ -22,11 +17,6 @@ h2, ul {
   font-family: var(--font-inter);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -36,4 +26,9 @@ body {
 /* required to adjust some annoying layout Tailwind adds that makes flex components not take up full width */
 *, ::before, ::after {
   box-sizing: content-box;
+}
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }
