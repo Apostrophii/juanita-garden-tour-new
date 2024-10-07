@@ -2,15 +2,15 @@
 
 import { Button } from '@/components/ui/button'
 
-export default function RegisterButton() {
+export default function MailingListButton() {
   return (
     <Button
       variant="default"
       size="lg"
       className="lg:m-[unset] lg:ml-auto bg-sky-600 hover:bg-sky-800 text-white mb-4"
-      onClick={() => alert('You can register soon...')}
+      onClick={() => window.open("http://eepurl.com/brFM9T", "_blank")}
     >
-      Register
+      Get Reminders
     </Button>
   )
 }

@@ -1,13 +1,6 @@
 export default function WelcomeCard() {
   return (
     <div className="bg-blue-200 bg-opacity-75 w-full flex flex-col items-start rounded-md py-7 px-5 flex-1 grow lg:-mr-8 lg:-mt-8 z-10 max-w-[90vw] min-w-64">
-      <h2 className="text-lg">
-        You&apos;re Invited!<br/><br/>
-      </h2>
-      <p>
-        We are highlighting North Kirkland's beautiful gardens for the first time in over 10 years.<br/><br/>
-        Money raised will go toward scholarships for Juanita High School students so come out and show them your support!<br/>
-      </p>
       <ul className="leading-7 mt-2">
         <li><b>Date:</b> June 7th</li>
         <li><b>Time:</b> 10am - 3pm</li>
