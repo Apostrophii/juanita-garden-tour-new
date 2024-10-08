@@ -7,7 +7,7 @@ export default function RegisterButton() {
     <Button
       variant="default"
       size="lg"
-      className="lg:m-[unset] lg:ml-auto bg-sky-600 hover:bg-sky-800 text-white mb-4"
+      className="w-20 bg-amber-600 hover:bg-amber-800 text-white mb-4"
       onClick={() => alert('You can register soon...')}
     >
       Register

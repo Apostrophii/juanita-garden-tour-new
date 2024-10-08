@@ -7,7 +7,7 @@ export default function MailingListButton() {
     <Button
       variant="default"
       size="lg"
-      className="lg:m-[unset] lg:ml-auto bg-sky-600 hover:bg-sky-800 text-white mb-4"
+      className="w-20 bg-sky-600 hover:bg-sky-800 text-white mb-4"
       onClick={() => window.open("http://eepurl.com/brFM9T", "_blank")}
     >
       Get Reminders
