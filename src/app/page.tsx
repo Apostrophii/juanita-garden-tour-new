@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import { ADLaM_Display } from 'next/font/google'
 
+import MailingListButton from '@/components/MailingListButton'
 import RegisterButton from '@/components/RegisterButton'
+import IntroText from '@/components/IntroText'
 import WelcomeCard from '@/components/WelcomCard'
 
 const ADLaM = ADLaM_Display({
@@ -13,25 +15,32 @@ const ADLaM = ADLaM_Display({
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center p-8 pb-20 sm:p-20">
-      <nav className="flex w-full">
+      <nav className="flex w-full gap-4 justify-end content-between">
+        <MailingListButton />
         <RegisterButton />
       </nav>
-      <h1 className={`${ADLaM.className} text-4xl md:text-6xl font-bold text-center md:text-left md:mb-20 mb-5`}>
-        juanita garden tour • spring &apos;25
+      <h1 className={`${ADLaM.className} text-4xl md:text-6xl font-bold text-center md:text-left md:mb-10 mb-5`}>
+        juanita garden tour
       </h1>
       <main className="flex flex-col items-center">
         <div
-          id="landing-contents"
-          className="w-full flex-1 flex lg:flex-row-reverse flex-col lg:gap-0 lg:items-start gap-6 items-center justify-center"
+          id="landing-container"
+          className="w-full flex flex-col items-center justify-center"
         >
-          <Image
-            className="w-[100vw] lg:max-w-[50%] max-w-[unset] rounded-md"
-            src="/img/background-image.png"
-            alt="Garden"
-            width={800}
-            height={600}
-          />
-          <WelcomeCard />
+          <IntroText />
+          <div
+            id="landing-contents"
+            className="w-full flex-1 flex lg:flex-row-reverse flex-col lg:items-start items-center justify-center"
+          >
+            <Image
+              className="w-[100vw] lg:max-w-[50%] max-w-[unset] lg:rounded-md lg:h-[50vh]"
+              src="/img/background-image.png"
+              alt="Garden"
+              width={800}
+              height={600}
+            />
+            <WelcomeCard />
+          </div>
         </div>
         <div
           id="map-contents"
