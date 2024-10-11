@@ -85,27 +85,50 @@ export default function Home() {
         </div>
         <div className="h-[120vh]">
           <div className="sticky top-[calc(50vh-50vw*(11/16))] w-screen">
-          <div className="relative">
-          <Image
-            className=""
-            style={fadeInAnimationStyles}
-            src="/img/SeattleMap.svg"
-            alt="Seattle Map"
-            width={800}
-            height={600}
-          />
-          <Image
-            className="absolute top-0"
-            style={zoomAndEnhanceAnimationSyles}
-            src="/img/JuanitaMap.svg"
-            alt="Juanita Map"
-            width={800}
-            height={600}
-          />
-          </div>
+            <div className="relative">
+              <Image
+                className=""
+                style={fadeInAnimationStyles}
+                src="/img/SeattleMap.svg"
+                alt="Seattle Map"
+                width={800}
+                height={600}
+              />
+              <Image
+                className="absolute top-0"
+                style={zoomAndEnhanceAnimationSyles}
+                src="/img/JuanitaMap.svg"
+                alt="Juanita Map"
+                width={800}
+                height={600}
+              />
+            </div>
           </div>
         </div>
-        {/* <div className="h-dvh"></div> */}
+        <div className="pt-8 pb-4">
+          <div className="flex flex-col gap-4">
+            <div className="flex justify-center gap-4">
+              <Image
+                className=""
+                src="/img/Flower.svg"
+                alt="Flower"
+                width={60}
+                height={60}
+              />
+              <Image
+                className={`${ADLaM.className}`}
+                src="/img/JNA.svg"
+                alt="Juanita Neighborhoods Association Logo"
+                width={100}
+                height={100}
+              />
+            </div>
+            <div>
+              <p><b>Phone:</b> 707.797.7499</p>
+              <p><b>Email:</b> info@juanitagardentour.org</p>
+            </div>
+          </div>
+        </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
       </footer>
