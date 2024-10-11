@@ -4,7 +4,7 @@ export default function WelcomeCard() {
       <ul className="leading-7 mt-2">
         <li><b>Date:</b> June 7th</li>
         <li><b>Time:</b> 10am - 3pm</li>
-        <li><b>Location:</b> <a href="https://maps.app.goo.gl/5JZjCNW6XtBTiZEN8" className="underline text-sky-600 decoration-sky-600">Juanita Village Plaza</a></li>
+        <li><b>Location:</b> <a href="https://maps.app.goo.gl/5JZjCNW6XtBTiZEN8" className="underline text-[#00485f] decoration-[#00485f]">Juanita Village Plaza</a></li>
         <li><b>Suggested donation:</b>
           <ul className="ml-3 leading-5 list-disc list-inside">
             <li><b>In advance:</b> $15/adult</li>

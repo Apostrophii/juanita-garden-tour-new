@@ -125,7 +125,7 @@ export default function Home() {
             </div>
             <div>
               <p><b>Phone:</b> 707.797.7499</p>
-              <p><b>Email:</b> info@juanitagardentour.org</p>
+              <p><b>Email:</b> <a href="mailto:someone@example.com" className="underline">info@juanitagardentour.org</a></p>
             </div>
           </div>
         </div>
