@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image'
 import { ADLaM_Display } from 'next/font/google'
 
@@ -5,6 +7,7 @@ import MailingListButton from '@/components/MailingListButton'
 import RegisterButton from '@/components/RegisterButton'
 import IntroText from '@/components/IntroText'
 import WelcomeCard from '@/components/WelcomCard'
+import React, { useEffect, useState } from 'react';
 
 const ADLaM = ADLaM_Display({
   variable: "--font-adlam",
@@ -13,17 +16,31 @@ const ADLaM = ADLaM_Display({
 })
 
 export default function Home() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY / (document.body.offsetHeight - window.innerHeight));
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  useEffect(() => {
+    document.body.style.setProperty('--scroll', scrollPosition.toString());
+  }, [scrollPosition]);
+
   return (
-    <div className="flex flex-col items-center justify-center p-8 pb-20 sm:p-20">
-      <nav className="flex w-full gap-4 justify-end content-between">
+    <div className="flex flex-col items-center p-8 pb-20 sm:p-20 min-h-[200vh]">
+      <nav className="flex w-full gap-4 content-between">
         <MailingListButton />
         <RegisterButton />
       </nav>
-      <h1 className={`${ADLaM.className} text-4xl md:text-6xl font-bold text-center md:text-left md:mb-10 mb-5`}>
+      <h1 className={`${ADLaM.className} text-3xl md:text-6xl font-bold text-center md:text-left md:mb-10 mb-5`}>
         juanita garden tour
       </h1>
       <main className="flex flex-col items-center">
-        <div
+        {/* <div
           id="landing-container"
           className="w-full flex flex-col items-center justify-center"
         >
@@ -44,22 +61,22 @@ export default function Home() {
         </div>
         <div
           id="map-contents"
-        >
+        > */}
           <Image
-            className="rounded-md my-4"
+            className="rounded-md fixed"
             src="/img/SeattleMap.png"
             alt="Seattle Map"
             width={800}
             height={600}
           />
           <Image
-            className="rounded-md"
+            className="rounded-md fixed animate-zoom-and-enhance [animation-play-state:paused] [animation-delay:calc(var(--scroll)*-1s)]"
             src="/img/JuanitaMap.png"
             alt="Juanita Map"
             width={800}
             height={600}
           />
-        </div>
+        {/* </div> */}
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
       </footer>
