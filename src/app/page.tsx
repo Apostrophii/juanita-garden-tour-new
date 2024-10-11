@@ -30,6 +30,14 @@ export default function Home() {
     document.body.style.setProperty('--scroll', scrollPosition.toString());
   }, [scrollPosition]);
 
+  const zoomAndEnhanceAnimationSyles = {
+    animation: 'zoom-and-enhance 1s linear infinite',
+    'animation-play-state': 'paused',
+    'animation-delay': 'calc(var(--scroll) * -1s)',
+    'animation-iteration-count': '1',
+    'animation-fill-mode': 'both',
+  };
+
   return (
     <div className="flex flex-col items-center p-8 pb-20 sm:p-20 min-h-[200vh]">
       <nav className="flex w-full gap-4 content-between">
@@ -70,7 +78,8 @@ export default function Home() {
             height={600}
           />
           <Image
-            className="rounded-md fixed animate-zoom-and-enhance [animation-play-state:paused] [animation-delay:calc(var(--scroll)*-1s)]"
+            className="rounded-md fixed"
+            style={zoomAndEnhanceAnimationSyles}
             src="/img/JuanitaMap.png"
             alt="Juanita Map"
             width={800}

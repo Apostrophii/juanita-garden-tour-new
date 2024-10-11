@@ -32,3 +32,22 @@ h2, ul {
     --radius: 0.5rem;
   }
 }
+
+@keyframes zoom-and-enhance {
+  0% {
+    opacity: 0;
+    transform: scale(0.29, 0.29) translate(47.5%, -62.7%);
+  }
+  5% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.29, 0.29) translate(47.5%, -62.7%);
+  }
+  85% {
+    transform: translate(0%, 0%);
+  }
+}
