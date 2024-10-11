@@ -58,23 +58,10 @@ export default function Home() {
           <h1 className={`${ADLaM.className} text-3xl md:text-6xl font-bold text-center md:text-left md:mb-10`}>
             juanita garden tour
           </h1>
+          <h2 className={`${ADLaM.className} text-2xl md:text-6xl font-bold text-center md:text-left md:mb-10`}>
+            june 7th • 2023
+          </h2>
         </div>
-        {/* <Image
-          className="fixed"
-          style={fadeInAnimationStyles}
-          src="/img/SeattleMap.svg"
-          alt="Seattle Map"
-          width={800}
-          height={600}
-        />
-        <Image
-          className="fixed"
-          style={zoomAndEnhanceAnimationSyles}
-          src="/img/JuanitaMap.svg"
-          alt="Juanita Map"
-          width={800}
-          height={600}
-        /> */}
       </header>
       <main className="flex flex-col items-center">
         <div className="h-[90vh]">
@@ -96,30 +83,29 @@ export default function Home() {
             <WelcomeCard />
           </div>
         </div>
-        <div className="h-dvh bg-green-500"></div>
-        {/* <div
-          id="landing-container"
-          className="w-full flex flex-col items-center justify-center"
-        >
-          <IntroText />
-          <div
-            id="landing-contents"
-            className="w-full flex-1 flex lg:flex-row-reverse flex-col lg:items-start items-center justify-center"
-          >
-            <Image
-              className="w-[100vw] lg:max-w-[50%] max-w-[unset] lg:rounded-md lg:h-[50vh]"
-              src="/img/background-image.png"
-              alt="Garden"
-              width={800}
-              height={600}
-            />
-            <WelcomeCard />
+        <div className="h-[120vh]">
+          <div className="sticky top-[calc(50vh-50vw*(11/16))] w-screen">
+          <div className="relative">
+          <Image
+            className=""
+            style={fadeInAnimationStyles}
+            src="/img/SeattleMap.svg"
+            alt="Seattle Map"
+            width={800}
+            height={600}
+          />
+          <Image
+            className="absolute top-0"
+            style={zoomAndEnhanceAnimationSyles}
+            src="/img/JuanitaMap.svg"
+            alt="Juanita Map"
+            width={800}
+            height={600}
+          />
+          </div>
           </div>
         </div>
-        <div
-          id="map-contents"
-        > */}
-        {/* </div> */}
+        {/* <div className="h-dvh"></div> */}
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
       </footer>
