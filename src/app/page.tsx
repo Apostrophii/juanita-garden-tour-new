@@ -50,33 +50,41 @@ export default function Home() {
   return (
     <div className="min-h-[200vh]">
       <header className="fixed left-1/2 -translate-x-2/4">
-        <div className="flex flex-col items-center justify-center w-screen p-8">
+        <div className="flex flex-col items-center justify-center w-screen p-8 bg-gradient-to-b from-white from-95%">
           <nav className="flex w-full gap-4 content-between justify-center">
             <MailingListButton />
             <RegisterButton />
           </nav>
-          <h1 className={`${ADLaM.className} text-3xl md:text-6xl font-bold text-center md:text-left md:mb-10 mb-5`}>
+          <h1 className={`${ADLaM.className} text-3xl md:text-6xl font-bold text-center md:text-left md:mb-10`}>
             juanita garden tour
           </h1>
         </div>
         <Image
-            className="fixed"
-            style={fadeInAnimationStyles}
-            src="/img/SeattleMap.svg"
-            alt="Seattle Map"
-            width={800}
-            height={600}
-          />
-          <Image
-            className="fixed"
-            style={zoomAndEnhanceAnimationSyles}
-            src="/img/JuanitaMap.svg"
-            alt="Juanita Map"
-            width={800}
-            height={600}
-          />
+          className="fixed"
+          style={fadeInAnimationStyles}
+          src="/img/SeattleMap.svg"
+          alt="Seattle Map"
+          width={800}
+          height={600}
+        />
+        <Image
+          className="fixed"
+          style={zoomAndEnhanceAnimationSyles}
+          src="/img/JuanitaMap.svg"
+          alt="Juanita Map"
+          width={800}
+          height={600}
+        />
       </header>
       <main className="flex flex-col items-center">
+        <Image
+          className="w-screen mt-40"
+          src="/img/background-image.png"
+          alt="Garden"
+          width={800}
+          height={600}
+        />
+        <WelcomeCard />
         {/* <div
           id="landing-container"
           className="w-full flex flex-col items-center justify-center"
