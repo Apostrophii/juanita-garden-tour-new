@@ -40,11 +40,11 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center p-8 pb-20 sm:p-20 min-h-[200vh]">
-      <nav className="flex w-full gap-4 content-between">
+      <nav className="fixed flex w-full gap-4 content-between">
         <MailingListButton />
         <RegisterButton />
       </nav>
-      <h1 className={`${ADLaM.className} text-3xl md:text-6xl font-bold text-center md:text-left md:mb-10 mb-5`}>
+      <h1 className={`fixed ${ADLaM.className} text-3xl md:text-6xl font-bold text-center md:text-left md:mb-10 mb-5`}>
         juanita garden tour
       </h1>
       <main className="flex flex-col items-center">
@@ -71,16 +71,16 @@ export default function Home() {
           id="map-contents"
         > */}
           <Image
-            className="rounded-md fixed"
-            src="/img/SeattleMap.png"
+            className="fixed"
+            src="/img/SeattleMap.svg"
             alt="Seattle Map"
             width={800}
             height={600}
           />
           <Image
-            className="rounded-md fixed"
+            className="fixed"
             style={zoomAndEnhanceAnimationSyles}
-            src="/img/JuanitaMap.png"
+            src="/img/JuanitaMap.svg"
             alt="Juanita Map"
             width={800}
             height={600}
