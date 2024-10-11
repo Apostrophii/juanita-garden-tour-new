@@ -30,23 +30,52 @@ export default function Home() {
     document.body.style.setProperty('--scroll', scrollPosition.toString());
   }, [scrollPosition]);
 
-  const zoomAndEnhanceAnimationSyles = {
-    animation: 'zoom-and-enhance 1s linear infinite',
+  const commonAnimationStyles = {
     'animation-play-state': 'paused',
     'animation-delay': 'calc(var(--scroll) * -1s)',
     'animation-iteration-count': '1',
     'animation-fill-mode': 'both',
+  }
+
+  const fadeInAnimationStyles = {
+    animation: 'fade-in 1s linear infinite',
+    ...commonAnimationStyles,
+  }
+
+  const zoomAndEnhanceAnimationSyles = {
+    animation: 'zoom-and-enhance 1s linear infinite',
+    ...commonAnimationStyles,
   };
 
   return (
-    <div className="flex flex-col items-center p-8 pb-20 sm:p-20 min-h-[200vh]">
-      <nav className="fixed flex w-full gap-4 content-between">
-        <MailingListButton />
-        <RegisterButton />
-      </nav>
-      <h1 className={`fixed ${ADLaM.className} text-3xl md:text-6xl font-bold text-center md:text-left md:mb-10 mb-5`}>
-        juanita garden tour
-      </h1>
+    <div className="min-h-[200vh]">
+      <header className="fixed left-1/2 -translate-x-2/4">
+        <div className="flex flex-col items-center justify-center w-screen p-8">
+          <nav className="flex w-full gap-4 content-between justify-center">
+            <MailingListButton />
+            <RegisterButton />
+          </nav>
+          <h1 className={`${ADLaM.className} text-3xl md:text-6xl font-bold text-center md:text-left md:mb-10 mb-5`}>
+            juanita garden tour
+          </h1>
+        </div>
+        <Image
+            className="fixed"
+            style={fadeInAnimationStyles}
+            src="/img/SeattleMap.svg"
+            alt="Seattle Map"
+            width={800}
+            height={600}
+          />
+          <Image
+            className="fixed"
+            style={zoomAndEnhanceAnimationSyles}
+            src="/img/JuanitaMap.svg"
+            alt="Juanita Map"
+            width={800}
+            height={600}
+          />
+      </header>
       <main className="flex flex-col items-center">
         {/* <div
           id="landing-container"
@@ -70,21 +99,6 @@ export default function Home() {
         <div
           id="map-contents"
         > */}
-          <Image
-            className="fixed"
-            src="/img/SeattleMap.svg"
-            alt="Seattle Map"
-            width={800}
-            height={600}
-          />
-          <Image
-            className="fixed"
-            style={zoomAndEnhanceAnimationSyles}
-            src="/img/JuanitaMap.svg"
-            alt="Juanita Map"
-            width={800}
-            height={600}
-          />
         {/* </div> */}
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">

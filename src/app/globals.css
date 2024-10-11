@@ -33,21 +33,33 @@ h2, ul {
   }
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 @keyframes zoom-and-enhance {
   0% {
     opacity: 0;
     transform: scale(0.29, 0.29) translate(47.5%, -62.7%);
   }
-  5% {
+  50% {
     opacity: 0;
   }
-  25% {
+  65% {
     opacity: 1;
   }
-  50% {
+  75% {
     transform: scale(0.29, 0.29) translate(47.5%, -62.7%);
   }
-  85% {
+  90% {
     transform: translate(0%, 0%);
   }
 }
