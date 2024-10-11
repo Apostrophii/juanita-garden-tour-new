@@ -49,7 +49,7 @@ export default function Home() {
 
   return (
     <div className="min-h-[200vh]">
-      <header className="fixed left-1/2 -translate-x-2/4">
+      <header className="fixed left-1/2 -translate-x-2/4 z-10">
         <div className="flex flex-col items-center justify-center w-screen p-8 bg-gradient-to-b from-white from-95%">
           <nav className="flex w-full gap-4 content-between justify-center">
             <MailingListButton />
@@ -59,7 +59,7 @@ export default function Home() {
             juanita garden tour
           </h1>
         </div>
-        <Image
+        {/* <Image
           className="fixed"
           style={fadeInAnimationStyles}
           src="/img/SeattleMap.svg"
@@ -74,17 +74,29 @@ export default function Home() {
           alt="Juanita Map"
           width={800}
           height={600}
-        />
+        /> */}
       </header>
       <main className="flex flex-col items-center">
-        <Image
-          className="w-screen mt-40"
-          src="/img/background-image.png"
-          alt="Garden"
-          width={800}
-          height={600}
-        />
-        <WelcomeCard />
+        <div className="h-[90vh]">
+          <div className="sticky flex items-center h-[20rem] top-[calc(50vh-10rem)] w-screen p-4 box-border bg-[#4db047] bg-opacity-50">
+            <IntroText />
+          </div>
+        </div>
+        <div className="h-[60vh]">
+          <Image
+            className="sticky top-[30vh] h-[40vh] object-cover"
+            src="/img/background-image.png"
+            alt="Garden"
+            width={800}
+            height={600}
+          />
+        </div>
+        <div className="h-[55vh]">
+          <div className="sticky top-[30vh] w-screen">
+            <WelcomeCard />
+          </div>
+        </div>
+        <div className="h-dvh bg-green-500"></div>
         {/* <div
           id="landing-container"
           className="w-full flex flex-col items-center justify-center"
