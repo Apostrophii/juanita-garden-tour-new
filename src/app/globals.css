@@ -48,16 +48,16 @@ h2, ul {
 @keyframes zoom-and-enhance {
   0% {
     opacity: 0;
-    transform: scale(0.29, 0.29) translate(47.5%, -62.7%);
+    transform: scale(0.306, 0.306) translate(38.8%, -53.9%);
   }
-  70% {
+  65% {
     opacity: 0;
   }
-  85% {
+  80% {
     opacity: 1;
   }
-  90% {
-    transform: scale(0.29, 0.29) translate(47.5%, -62.7%);
+  85% {
+    transform: scale(0.306, 0.306) translate(38.8%, -53.9%);
   }
   95% {
     transform: translate(0%, 0%);
