@@ -112,6 +112,9 @@ export default function Home() {
                 height={600}
               />
             </div>
+            <p className="px-8 py-2">
+              Gardens will be throughout the area served by Juanita High School (shown in purple).
+            </p>
           </div>
         </div>
         <div className="pt-8 pb-4">
