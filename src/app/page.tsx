@@ -30,7 +30,7 @@ export default function Home() {
     document.body.style.setProperty('--scroll', scrollPosition.toString());
   }, [scrollPosition]);
 
-  const commonAnimationStyles = {
+  const scrollAnimationStyles = {
     'animation-play-state': 'paused',
     'animation-delay': 'calc(var(--scroll) * -1s)',
     'animation-iteration-count': '1',
@@ -39,13 +39,22 @@ export default function Home() {
 
   const fadeInAnimationStyles = {
     animation: 'fade-in 1s linear infinite',
-    ...commonAnimationStyles,
+    ...scrollAnimationStyles,
   }
 
   const zoomAndEnhanceAnimationSyles = {
     animation: 'zoom-and-enhance 1s linear infinite',
-    ...commonAnimationStyles,
+    ...scrollAnimationStyles,
   };
+
+  const fadeOutAnimationSyles = {
+    animation: 'fade-out 1s linear infinite',
+    ...scrollAnimationStyles,
+  }
+
+  const smallBounceAnimationSyles = {
+    animation: 'small-bounce 800ms 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;',
+  }
 
   return (
     <div className="min-h-[200vh]">
@@ -132,6 +141,11 @@ export default function Home() {
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
       </footer>
+      <div className="" style={fadeOutAnimationSyles}>
+        <div className="fixed left-[calc(50%-1rem)] bottom-4 text-white bg-[#01a9de] w-8 h-8 flex items-center justify-center pointer-events-none rounded-full opacity-0 -translate-y-12" style={smallBounceAnimationSyles}>
+          ↓
+        </div>
+      </div>
     </div>
   )
 }

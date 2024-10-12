@@ -63,3 +63,22 @@ h2, ul {
     transform: translate(0%, 0%);
   }
 }
+
+@keyframes fade-out {
+  85% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes small-bounce {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
