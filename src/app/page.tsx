@@ -53,7 +53,7 @@ export default function Home() {
   }
 
   const smallBounceAnimationSyles = {
-    animation: 'small-bounce 800ms 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;',
+    animation: 'small-bounce 800ms 500ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards',
   }
 
   return (
