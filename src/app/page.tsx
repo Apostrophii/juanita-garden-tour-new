@@ -120,7 +120,7 @@ export default function Home() {
           </div>
           <div className="pt-8 pb-4">
             <div className="flex flex-col gap-4">
-              <div className="flex justify-center gap-4">
+              <div className="flex justify-center items-center gap-4">
                 <Image
                   className=""
                   src="/img/Flower.svg"
@@ -129,8 +129,8 @@ export default function Home() {
                   height={60}
                 />
                 <Image
-                  className={`${ADLaM.className}`}
-                  src="/img/JNA.svg"
+                  className={`${ADLaM.className} h-[59.427px]`}
+                  src="/img/JNA.png"
                   alt="Juanita Neighborhoods Association Logo"
                   width={100}
                   height={100}
