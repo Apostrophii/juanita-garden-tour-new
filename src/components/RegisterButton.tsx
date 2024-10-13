@@ -8,7 +8,7 @@ export default function RegisterButton() {
       variant="default"
       size="lg"
       className="w-20 bg-[#f68623] hover:bg-[#d16609] text-white mb-4"
-      onClick={() => alert('You can register soon...')}
+      onClick={() => alert('Coming soon!')}
     >
       Register
     </Button>
