@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 418.8 249.2" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <g transform="matrix(1.649018, 0, 0, 1.649018, -345.701813, -704.500061)" style="">
+    <title>Logo</title>
+    <path style="stroke: rgb(0, 0, 0); stroke-opacity: 0; fill: rgb(77, 176, 71);" d="M 216.843 459.172 L 209.641 547.268 L 276.986 547.396 L 280.241 438.139 L 216.843 459.172 Z"/>
+    <path style="stroke: rgb(0, 0, 0); stroke-opacity: 0; fill: rgb(1, 169, 222);" d="M 275.948 427.224 L 272.98 547.36 L 373.52 564.732 L 368.219 455.912 L 275.948 427.224 Z"/>
+    <path style="stroke: rgb(0, 0, 0); stroke-opacity: 0; fill: rgb(246, 134, 35);" d="M 365.785 445.381 L 369.259 549.972 L 463.616 578.35 L 456.848 441.021 L 365.785 445.381 Z"/>
+    <text style="fill: rgb(255, 255, 255); font-family: 'ADLaM Display'; font-size: 92px; font-weight: 700; white-space: pre;" x="232.5" y="525.759">J</text>
+    <text style="fill: rgb(255, 255, 255); font-family: 'ADLaM Display'; font-size: 92px; font-weight: 700; white-space: pre;" x="286.118" y="532.261">N</text>
+    <text style="fill: rgb(255, 255, 255); font-family: 'ADLaM Display'; font-size: 92px; font-weight: 700; white-space: pre;" x="383.195" y="532.255">A</text>
+  </g>
+</svg>

@@ -1,10 +1,10 @@
 export default function WelcomeCard() {
   return (
-    <div className="bg-blue-200 bg-opacity-75 w-full flex flex-col items-center justify-center rounded-md py-7 px-5 flex-1 grow z-10 max-w-[90vw] min-w-64 lg:h-[43vh]">
+    <div className="h-[16rem] top-[calc(50vh-8rem)] box-border bg-[#01a9de] bg-opacity-50 flex flex-col items-center justify-center py-7 px-5">
       <ul className="leading-7 mt-2">
         <li><b>Date:</b> June 7th</li>
         <li><b>Time:</b> 10am - 3pm</li>
-        <li><b>Location:</b> <a href="https://maps.app.goo.gl/5JZjCNW6XtBTiZEN8" className="underline text-sky-600 decoration-sky-600">Juanita Village Plaza</a></li>
+        <li><b>Location:</b> <a href="https://maps.app.goo.gl/5JZjCNW6XtBTiZEN8" className="underline text-[#00485f] decoration-[#00485f]">Juanita Village Plaza</a></li>
         <li><b>Suggested donation:</b>
           <ul className="ml-3 leading-5 list-disc list-inside">
             <li><b>In advance:</b> $15/adult</li>
