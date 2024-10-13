@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		screens: {
+			'mobile-landscape': {'raw': '(max-width: 700px) and (min-aspect-ratio: 1/1)'},
+		},
   		colors: {
   			background: 'var(--background)',
   			foreground: 'var(--foreground)'

@@ -74,7 +74,7 @@ export default function Home() {
           </div>
         </header>
         <main className="flex flex-col items-center">
-          <div className="h-[90vh]">
+          <div className="h-[90vh] mobile-landscape:mt-48">
             <div className="sticky flex items-center h-[20rem] top-[calc(50vh-9rem)] p-4 box-border bg-[#4db047] bg-opacity-50">
               <IntroText />
             </div>

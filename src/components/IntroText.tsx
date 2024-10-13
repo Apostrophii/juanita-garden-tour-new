@@ -1,6 +1,6 @@
 export default function IntroText() {
   return (
-    <div className="">
+    <div className="mobile-landscape:-mt-24">
       <h2 className="text-xl font-semibold self-start px-4">
         You&apos;re Invited!
       </h2>
