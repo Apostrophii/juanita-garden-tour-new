@@ -83,7 +83,7 @@ export default function Home() {
               height={600}
             />
           </div>
-          <div className="h-[55vh] squat:h-[70vh]">
+          <div className="h-[65vh] squat:h-[80vh]">
             <div className="sticky top-[30vh] squat:top-[35vh] w-[40rem] max-w-[100vw]">
               <WelcomeCard />
             </div>
@@ -108,7 +108,7 @@ export default function Home() {
                 />
               </div>
               <p className="px-8 py-2">
-                Gardens will be throughout the area (shown in tan) served by Juanita High School (shown in purple).
+                Gardens in the tour will be within the boundaries served by Juanita High School (the area shaded tan). Juanita High School is the purple square.
               </p>
             </div>
           </div>
