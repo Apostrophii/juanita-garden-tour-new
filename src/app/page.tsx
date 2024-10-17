@@ -101,7 +101,7 @@ export default function Home() {
                 <Image
                   className="absolute top-0"
                   style={zoomAndEnhanceAnimationSyles}
-                  src="/img/JuanitaMapRecolored.svg"
+                  src="/img/JuanitaMapMinimal.svg"
                   alt="Juanita Map"
                   width={800}
                   height={600}
