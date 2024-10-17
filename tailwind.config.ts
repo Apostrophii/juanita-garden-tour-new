@@ -11,6 +11,7 @@ const config: Config = {
   	extend: {
 		screens: {
 			'mobile-landscape': {'raw': '(max-width: 700px) and (min-aspect-ratio: 1/1)'},
+			'squat': {'raw': '(max-height: 900px) and (min-aspect-ratio: 1/1)'},
 		},
   		colors: {
   			background: 'var(--background)',

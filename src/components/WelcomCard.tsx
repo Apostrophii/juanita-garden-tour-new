@@ -9,6 +9,7 @@ export default function WelcomeCard() {
           <ul className="ml-3 leading-5 list-disc list-inside">
             <li><b>In advance:</b> $15/adult</li>
             <li><b>Day of:</b> $20/adult</li>
+            <li><b>18 and under:</b> Free!</li>
           </ul>
         </li>
       </ul>

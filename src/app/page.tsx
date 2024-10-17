@@ -37,11 +37,6 @@ export default function Home() {
     'animation-fill-mode': 'both',
   }
 
-  const fadeInAnimationStyles = {
-    animation: 'fade-in 1s linear infinite',
-    ...scrollAnimationStyles,
-  }
-
   const zoomAndEnhanceAnimationSyles = {
     animation: 'zoom-and-enhance 1s linear infinite',
     ...scrollAnimationStyles,
@@ -60,45 +55,44 @@ export default function Home() {
     <div className="flex justify-center">
       <div className="max-w-[40rem]">
         <header className="fixed left-1/2 -translate-x-2/4 z-10">
-          <div className="flex flex-col items-center justify-center w-screen p-8 bg-gradient-to-b from-white from-95%">
+          <div className="flex flex-col items-center justify-center w-screen p-8 squat:p-4 bg-gradient-to-b from-white from-95%">
             <nav className="flex w-full gap-4 content-between justify-center">
               <MailingListButton />
               <RegisterButton />
             </nav>
-            <h1 className={`${ADLaM.className} text-3xl md:text-6xl font-bold md:mb-4 md:mt-2`}>
+            <h1 className={`${ADLaM.className} text-3xl md:text-6xl squat:text-4xl font-bold md:mb-4 md:mt-2 squat:mb-1 squat:mt-0`}>
               juanita garden tour
             </h1>
-            <h2 className={`${ADLaM.className} text-2xl md:text-4xl font-bold md:mb-2`}>
+            <h2 className={`${ADLaM.className} text-2xl md:text-4xl squat:text-2xl font-bold md:mb-2`}>
               june 7th • 2025
             </h2>
           </div>
         </header>
         <main className="flex flex-col items-center">
-          <div className="h-[90vh] mobile-landscape:mt-48">
-            <div className="sticky flex items-center h-[20rem] top-[calc(50vh-9rem)] p-4 box-border bg-[#4db047] bg-opacity-50">
+          <div className="h-[90vh] squat:h-[100vh] mobile-landscape:mt-48">
+            <div className="sticky flex items-center h-[20rem] squat:h-[16rem] top-[calc(50vh-9rem)] squat:top-[calc(55vh-8rem)] p-4 box-border bg-[#4db047] bg-opacity-50">
               <IntroText />
             </div>
           </div>
-          <div className="h-[60vh]">
+          <div className="h-[60vh] squat:h-[70vh]">
             <Image
-              className="sticky top-[30vh] h-[40vh] object-cover"
+              className="sticky top-[30vh] squat:top-[35vh] h-[40vh] object-cover"
               src="/img/background-image.png"
               alt="Garden"
               width={800}
               height={600}
             />
           </div>
-          <div className="h-[55vh]">
-            <div className="sticky top-[30vh] w-[40rem] max-w-[100vw]">
+          <div className="h-[55vh] squat:h-[70vh]">
+            <div className="sticky top-[30vh] squat:top-[35vh] w-[40rem] max-w-[100vw]">
               <WelcomeCard />
             </div>
           </div>
-          <div className="h-[120vh]">
-            <div className="sticky top-[calc(50vh-50vw*(11/16))] md:top-[calc(50vh-200px)] w-full">
+          <div className="h-[120vh] squat:h-[220vh]">
+            <div className="sticky top-[calc(50vh-50vw*(11/16))] md:top-[calc(50vh-200px)] squat:md:top-[calc(50vh-130px)] w-full">
               <div className="relative">
                 <Image
                   className=""
-                  style={fadeInAnimationStyles}
                   src="/img/SeattleMap.svg"
                   alt="Seattle Map"
                   width={800}
@@ -107,14 +101,14 @@ export default function Home() {
                 <Image
                   className="absolute top-0"
                   style={zoomAndEnhanceAnimationSyles}
-                  src="/img/JuanitaMap.svg"
+                  src="/img/JuanitaMapRecolored.svg"
                   alt="Juanita Map"
                   width={800}
                   height={600}
                 />
               </div>
               <p className="px-8 py-2">
-                Gardens will be throughout the area served by Juanita High School (shown in purple).
+                Gardens will be throughout the area (shown in tan) served by Juanita High School (shown in purple).
               </p>
             </div>
           </div>
