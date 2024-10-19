@@ -5,7 +5,7 @@ export default function WelcomeCard() {
         <li><b>Date:</b> June 7th, 2025</li>
         <li><b>Time:</b> 10am - 3pm</li>
         <li><b>Start location:</b> <a href="https://maps.app.goo.gl/5JZjCNW6XtBTiZEN8" className="underline text-[#00485f] decoration-[#00485f]">Juanita Village Plaza</a></li>
-        <li><b>Tour style:</b> self-lead</li>
+        <li><b>Tour style:</b> self-led</li>
         <li><b>Suggested donation:</b>
           <ul className="ml-3 leading-5 list-disc list-inside">
             <li><b>In advance:</b> $15/adult</li>
