@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image'
 import { ADLaM_Display } from 'next/font/google'
 
 import MailingListButton from '@/components/MailingListButton'
@@ -63,42 +62,42 @@ export default function Home() {
             <h1 className={`${ADLaM.className} text-3xl md:text-6xl squat:text-4xl font-bold md:mb-4 md:mt-2 squat:mb-1 squat:mt-0`}>
               juanita garden tour
             </h1>
-            <h2 className={`${ADLaM.className} text-2xl md:text-4xl squat:text-2xl font-bold md:mb-2`}>
+            <h2 className={`${ADLaM.className} text-2xl md:text-4xl squat:text-2xl font-bold md:mb-2 squat:mb-0`}>
               june 7th • 2025
             </h2>
           </div>
         </header>
         <main className="flex flex-col items-center">
-          <div className="h-[90vh] squat:h-[100vh] mobile-landscape:mt-48">
-            <div className="sticky flex items-center h-[20rem] squat:h-[16rem] top-[calc(50vh-9rem)] squat:top-[calc(55vh-8rem)] p-4 box-border bg-[#4db047] bg-opacity-50">
+          <div className="h-[95vh] squat:h-[100vh] mobile-landscape:mt-48">
+            <div className="sticky flex items-center h-[20rem] squat:h-[16rem] top-[calc(50vh+3rem-10rem)] md:top-[calc(50vh-10rem)] squat:top-[calc(50vh+5rem-8rem)] p-4 box-border bg-[#4db047] bg-opacity-50">
               <IntroText />
             </div>
           </div>
-          <div className="h-[60vh] squat:h-[70vh]">
-            <Image
-              className="sticky top-[30vh] squat:top-[35vh] h-[40vh] object-cover"
+          <div className="h-[calc(100vh-12rem)] md:h-[calc(100vh-16rem)] squat:h-[calc(100vh-10rem)]">
+            <img
+              className="sticky top-[calc(50vh+3rem-20vh)] md:top-[calc(50vh-200px)] squat:top-[calc(50vh+5rem-100px)] h-[40vh] object-cover"
               src="/img/background-image.png"
               alt="Garden"
               width={800}
               height={600}
             />
           </div>
-          <div className="h-[65vh] squat:h-[80vh]">
-            <div className="sticky top-[30vh] squat:top-[35vh] w-[40rem] max-w-[100vw]">
+          <div className="h-[calc(100vh-12rem)] md:h-[calc(100vh-16rem)] squat:h-[calc(110vh-10rem)]">
+            <div className="sticky top-[calc(50vh+4.5rem-0.5*min(65vh,26.5rem))] md:top-[calc(50vh-0.5*min(65vh,26.5rem))] squat:top-[calc(50vh+5rem-0.5*min(65vh,26.5rem))] max-w-[100vw]">
               <WelcomeCard />
             </div>
           </div>
-          <div className="h-[120vh] squat:h-[220vh]">
-            <div className="sticky top-[calc(50vh-50vw*(11/16))] md:top-[calc(50vh-200px)] squat:md:top-[calc(50vh-130px)] w-full">
+          <div className="h-[calc(160vh-12rem)] md:h-[calc(160vh-16rem)] squat:h-[calc(220vh-10rem)]">
+            <div className="sticky top-[calc(50vh+1rem-50vw*(11/16))] md:top-[calc(50vh-220px)] squat:md:top-[calc(50vh+5rem-210px)] w-full">
               <div className="relative">
-                <Image
+                <img
                   className=""
                   src="/img/SeattleMap.svg"
                   alt="Seattle Map"
                   width={800}
                   height={600}
                 />
-                <Image
+                <img
                   className="absolute top-0"
                   style={zoomAndEnhanceAnimationSyles}
                   src="/img/JuanitaMapMinimal.svg"
@@ -115,14 +114,14 @@ export default function Home() {
           <div className="pt-8 pb-4">
             <div className="flex flex-col gap-4">
               <div className="flex justify-center items-center gap-4">
-                <Image
+                <img
                   className=""
                   src="/img/Flower.svg"
                   alt="Flower"
                   width={60}
                   height={60}
                 />
-                <Image
+                <img
                   className={`${ADLaM.className} h-[59.427px]`}
                   src="/img/JNA.png"
                   alt="Juanita Neighborhoods Association Logo"

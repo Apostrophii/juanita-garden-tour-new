@@ -1,6 +1,6 @@
 export default function WelcomeCard() {
   return (
-    <div className="min-h-[16rem] top-[calc(50vh-8rem)] box-border bg-[#01a9de] bg-opacity-50 flex flex-col items-center justify-center py-7 px-5">
+    <div className="h-[min(65vh,26.5rem)] top-[calc(50vh-8rem)] box-border bg-[#01a9de] bg-opacity-50 flex flex-col items-center justify-center py-7 px-5">
       <ul className="leading-6">
         <li><b>Date:</b> June 7th, 2025</li>
         <li><b>Time:</b> 10am - 3pm</li>
