@@ -16,7 +16,7 @@ export default function WelcomeCard() {
       </ul>
       <p className="pt-6 px-4">
         On the day of the tour, pick up your map at the Juanita Neighborhoods Association booth at Juanita Village Plaza.
-        If you haven't already pre-registered for a discount online, you can register at the booth on the day of the tour.
+        If you haven&apos;t already pre-registered for a discount online, you can register at the booth on the day of the tour.
       </p>
     </div>
   )
