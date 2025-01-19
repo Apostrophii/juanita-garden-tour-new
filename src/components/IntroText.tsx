@@ -8,7 +8,7 @@ export default function IntroText() {
         We are highlighting North Kirkland&apos;s beautiful gardens for the first time in over 10 years.
       </p>
       <p className="self-start px-4 py-2">
-        Money raised will go toward scholarships for Juanita High School students, so come out and show them your support!
+        Money raised will go toward community service awards for Juanita High School students, so come out and show them your support!
       </p>
     </div>
   )
